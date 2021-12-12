@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+
+/*Primary colors*/
+--cyan: hsl(179, 62%, 43%);
+--bright-yellow: hsl(71, 73%, 54%);
+
+/*Neutral*/
+--light-gray: hsl(204, 43%, 93%);
+--grayish-blue: hsl(218, 22%, 67%);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray);
+    font-weight: 400;
+}
+
+.container {
+	display: flex;
+	flex-flow: wrap;
+	padding: 2rem;
+}
+
+.join-us {
+	background-color: white;
+	padding: 1.5rem;
+	border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.join-us__title {
+	font-weight: 700;
+	color: var(--cyan);
+	margin-bottom: 1.5rem;
+}
+
+.join-us__subtitle{
+    font-weight: 700;
+    color: var(--bright-yellow);
+}
+
+.join-us__paragraph {
+	color: var(--grayish-blue);
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}   
+
+.subscription {
+	background-color: var(--cyan);
+	width: 100%;
+	padding: 1.5rem;
+}
+
+.subscription__title {
+	font-weight: 700;
+	color: white;
+	margin-bottom: 1.5rem;
+}
+
+.subscription__per-month {
+	color: var(--light-gray);
+	margin-bottom: 0.5rem;
+}
+
+.subscription__per-month__price {
+	color: white;
+	font-size: 2em;
+	font-weight: 700;
+	margin-right: 0.5rem;
+}
+
+.subscription__subtitle {
+	color: white;
+	margin-bottom: 2rem;
+}
+
+.subscription__button {
+	padding: 1rem 6.8rem;
+	background-color: var(--bright-yellow);
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.why-us {
+	background-color: var(--grayish-blue);
+	width: 100%;
+	padding: 1.5rem;
+	border-radius: 0 0 10px 10px;
+}
+
+.why-us__title {
+	font-weight: 700;
+	color: white;
+	margin-bottom: 1.5rem;
+}
+
+.why-us__paragraph{
+    font-weight: 400;
+    color: var(--light-gray);
+    list-style-type: none;
+}
+
+@media (min-width:1000px){
+
+    .container {
+        padding: 10rem 26rem;
+    }
+
+    .subscription__button {
+        padding: 1rem 6.5rem;
+        background-color: var(--bright-yellow);
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .subscription {
+        background-color: var(--cyan);
+        width: 100%;
+        padding: 1.5rem;
+        flex-basis: 0;
+        flex-grow: 1;
+        border-radius: 0 0 0 10px;
+    }
+
+    .why-us {
+        background-color: var(--grayish-blue);
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: 0 0 10px 0;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+}
